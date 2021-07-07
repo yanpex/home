@@ -1,0 +1,669 @@
+/*
+  Theme Name: Sapona - One Page Responsive Corporate Template
+  Theme URL: http://themewar.com/html/saponaLanding
+  Author: ThemeWar
+  Author URI: http://themewar.com
+  Description: One Page Responsive Corporate Template
+  Version: 1.0.0
+*/
+/*=======================================================================
+[Table of contents]
+=========================================================================
+1. Home One
+    i. header
+    ii. slider
+    iii. feature
+    iv. portfolio
+    v. pricing
+    vi. video
+    vii. worker
+    viii. about us
+    ix. testimonial
+    x. history
+    xi. contact
+    xii. footer
+2. Blog Page
+==========================================================================*/
+@media (min-width: 1400px) and (max-width:2000px){
+    .folioHoverContent {
+        padding-top: 148px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px)
+{
+    .mainMenu ul li{
+        padding: 0 18px 40px;
+    }
+    .mainMenu ul li:first-child{
+        padding-left: 0px;
+    }
+    .mainMenu ul li a{
+        letter-spacing: 0px;
+    }
+    .singleFunfact{
+        margin-bottom: 30px;
+    }
+    .singleFolio{
+        width: 33.3333%;
+    }
+    .singleTeam{
+        width: 265px;
+        position: relative;
+        margin:  0 auto 30px;
+    }
+    .s2Process{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .singlePrice{
+        margin-bottom: 30px;
+    }
+    .gridBlog.noMarginBottom{
+        margin-bottom: 30px !important;
+    }
+    .gridDetails h3{
+        line-height: 20px;
+    }
+    .socialMenu a{
+        margin-right: 18px;
+    }
+    .copyright{
+        line-height: 20px;
+        padding: 25px 0;
+    }
+    .panContent a{
+        line-height: 20px;
+        margin-top: 0px;
+    }
+    .sFVideo iframe{
+        height: 220px;
+    }
+    .sH2{
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 766px)
+{
+    .header .col-lg-9{
+        padding: 0px !important;
+    }
+    .logo, .fixedHeader .logo{
+        text-align: center;
+        border-bottom: 1px solid #e7e7e7;
+        padding:  15px 0;
+    }
+    .mainMenu, .fixedHeader .mainMenu{
+        padding-top: 0px;
+    }
+    #menuToggle{
+        width: 100%;
+        text-align: center;
+        margin: 15px 0;
+    }
+    #menuToggle a{
+        display: inline-block;
+        background: #e7e7e7;
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 2px;
+        padding: 5px 10px;
+    }
+    #menuToggle a:hover, #menuToggle a.active{
+        background: #b38441;
+        color: #FFF;
+    }
+    .mainMenu ul{
+        position: absolute;
+        width: 100%;
+        background: #FFF;
+    }
+    .mainMenu > ul{
+        height: 195px;
+        overflow: scroll;
+        display: none;
+    }
+    .mainMenu ul li, .fixedHeader .mainMenu ul li{
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .mainMenu ul li:after{
+        display: none;
+    }
+    .mainMenu ul li a{
+        padding: 15px 0;
+        border-bottom: 1px solid #e7e7e7;
+        width: 100%;
+    }
+    .mainMenu ul li.hasChildren span{
+        border: 1px solid #282828;
+        height: 15px;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        width: 15px;
+        cursor: pointer;
+        transition: all ease 700ms;
+        -moz-transition: all ease 700ms;
+        -webkit-transition: all ease 700ms;
+        -ms-transition: all ease 700ms;
+        -o-transition: all ease 700ms;
+    }
+    .mainMenu ul li.hasChildren span:hover, .mainMenu ul li.hasChildren span.active{
+        border-color: #b38441;
+    }
+    .mainMenu ul li.hasChildren span:after{
+        color: #282828;
+        content: "+";
+        font-size: 15px;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        padding-top: 1px;
+        transition: all ease 700ms;
+        -moz-transition: all ease 700ms;
+        -webkit-transition: all ease 700ms;
+        -ms-transition: all ease 700ms;
+        -o-transition: all ease 700ms;
+    }
+    .mainMenu ul li.hasChildren span:hover:after, .mainMenu ul li.hasChildren span.active:after{
+        color: #b38441;
+    }
+    .mainMenu ul li ul.dropMenu{
+        position: relative;
+        width: 100%;
+        display: none;
+        transition: none;
+        -moz-transition: none;
+        -webkit-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        background: #f8f8f8;
+    }
+    .mainMenu .dropMenu li a{
+        padding: 15px 0;
+        border-bottom: 1px solid #e7e7e7;
+    }
+
+    /***************** Feature *******************/
+    .singleFeature{
+        margin-bottom: 40px;
+    }
+    /***************** Fun Fact *******************/
+    .singleFunfact{
+        margin-bottom: 40px;
+    }
+    /***************** Portfolio *******************/
+    .foliioMenu ul li:after{
+        display: none;
+    }
+    .foliioMenu ul li{
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    .foliioMenu ul li:last-child{
+        padding-right: 34px;
+    }
+    #Grid{
+        text-align: center;
+    }
+    .singleFolio{
+        width: 290px;
+        float: none;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    /***************** About Us *******************/
+    .aboutItem{
+        margin-bottom: 30px;
+    }
+    /***************** Team *******************/
+    .singleTeam{
+        max-width: 290px;
+        margin:  0 auto 30px;
+    }
+    .teamThumb img{
+        width: 100%;
+        height: auto;
+    }
+
+    /***************** Process *******************/
+    .processHeading{
+        display: none;
+    }
+    .processTitle{
+        width: 100%;
+    }
+    .s2Process{
+        width: 290px;
+        margin-bottom: 30px;
+    }
+    /***************** Price *******************/
+    .singlePrice{
+        margin-bottom: 30px;
+    }
+    /***************** Client *******************/
+    .singleClient{
+        width: 260px;
+    }
+
+    /***************** Blog *******************/
+    .metas{
+        line-height: 1.3;
+    }
+    .metas span{
+        line-height: 11px;
+    }
+    .gridLink{
+        word-break: break-all;
+    }
+    .gridDetails h3{
+        line-height: 1.3;
+    }
+    .gridBlog.noMarginBottom{
+        margin-bottom: 30px !important;
+    }
+
+    /***************** Contact *******************/
+    .ocntactInfo{
+        margin-bottom: 30px;
+    }
+    /***************** Footer *******************/
+    .socialMenu{
+        text-align: center;
+    }
+    .socialMenu a{
+        margin-right: 20px;
+    }
+    .copyright{
+        text-align: center;
+        line-height: 20px;
+        padding-bottom: 60px;
+        padding-top: 0px;
+    }
+    .backTotopcenter{
+        bottom: 0;
+        height: 40px;
+        padding: 10px 0;
+        position: absolute;
+        width: 100%;
+    }
+    #backToTop{
+        width: 100%;
+        padding-top: 10px;
+        z-index: 99;
+        height: 40px;
+    }
+    .bars{
+        display: none;
+    }
+    .sFTestimonial p{
+        font-size: 15px;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+    .sFTestimonial{
+        padding: 40px 20px;
+    }
+    .b1desc h1, .b1desc7 h1 {
+        font-size: 40px;
+    }
+
+}
+@media (min-width: 320px) and (max-width: 480px)
+{
+    .header .col-lg-9{
+        padding: 0px !important;
+    }
+    .logo, .fixedHeader .logo{
+        text-align: center;
+        border-bottom: 1px solid #e7e7e7;
+        padding:  15px 0;
+    }
+    .mainMenu, .fixedHeader .mainMenu{
+        padding-top: 0px;
+    }
+    #menuToggle{
+        width: 100%;
+        text-align: center;
+        margin: 15px 0;
+    }
+    #menuToggle a{
+        display: inline-block;
+        background: #e7e7e7;
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 2px;
+        padding: 5px 10px;
+    }
+    #menuToggle a:hover, #menuToggle a.active{
+        background: #b38441;
+        color: #FFF;
+    }
+    .mainMenu ul{
+        position: absolute;
+        width: 100%;
+        background: #FFF;
+    }
+    .mainMenu > ul{
+        height: 195px;
+        overflow: scroll;
+        display: none;
+    }
+    .mainMenu ul li, .fixedHeader .mainMenu ul li{
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .mainMenu ul li:after{
+        display: none;
+    }
+    .mainMenu ul li a{
+        padding: 15px 0;
+        border-bottom: 1px solid #e7e7e7;
+        width: 100%;
+    }
+    .mainMenu ul li.hasChildren span{
+        border: 1px solid #282828;
+        height: 15px;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        width: 15px;
+        cursor: pointer;
+        transition: all ease 700ms;
+        -moz-transition: all ease 700ms;
+        -webkit-transition: all ease 700ms;
+        -ms-transition: all ease 700ms;
+        -o-transition: all ease 700ms;
+    }
+    .mainMenu ul li.hasChildren span:hover, .mainMenu ul li.hasChildren span.active{
+        border-color: #b38441;
+    }
+    .mainMenu ul li.hasChildren span:after{
+        color: #282828;
+        content: "+";
+        font-size: 15px;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        padding-top: 1px;
+        transition: all ease 700ms;
+        -moz-transition: all ease 700ms;
+        -webkit-transition: all ease 700ms;
+        -ms-transition: all ease 700ms;
+        -o-transition: all ease 700ms;
+    }
+    .mainMenu ul li.hasChildren span:hover:after, .mainMenu ul li.hasChildren span.active:after{
+        color: #b38441;
+    }
+    .mainMenu ul li ul.dropMenu{
+        position: relative;
+        width: 100%;
+        display: none;
+        transition: none;
+        -moz-transition: none;
+        -webkit-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        background: #f8f8f8;
+    }
+    .mainMenu .dropMenu li a{
+        padding: 15px 0;
+        border-bottom: 1px solid #e7e7e7;
+    }
+
+    /***************** slider 01 *******************/
+    .sliderItem{
+        height: 300px;
+    }
+    .slderHeading{
+        font-size: 35px;
+        letter-spacing: 1px;
+
+    }
+
+    /***************** Feature *******************/
+    .singleFeature{
+        margin-bottom: 40px;
+    }
+    /***************** Fun Fact *******************/
+    .singleFunfact{
+        margin-bottom: 40px;
+    }
+    /***************** Portfolio *******************/
+    .foliioMenu ul li:after{
+        display: none;
+    }
+    .foliioMenu ul li{
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    .foliioMenu ul li:last-child{
+        padding-right: 34px;
+    }
+    #Grid{
+        text-align: center;
+    }
+    .singleFolio{
+        width: 290px;
+        float: none;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    /***************** About Us *******************/
+    .aboutItem{
+        margin-bottom: 30px;
+    }
+    /***************** Testimonial *******************/
+    .testimonialItem p{
+        letter-spacing: 1px;
+        font-size: 16px;
+        line-height: 25px;
+        width: 100%;
+    }
+    /***************** Team *******************/
+    .singleTeam{
+        max-width: 290px;
+        margin:  0 auto 30px;
+    }
+    .teamThumb img{
+        width: 100%;
+        height: auto;
+    }
+    /***************** Process *******************/
+    .processHeading{
+        display: none;
+    }
+    .processTitle{
+        width: 100%;
+    }
+    .s2Process{
+        width: 290px;
+        margin-bottom: 30px;
+    }
+    /***************** Price *******************/
+    .singlePrice{
+        margin-bottom: 30px;
+    }
+    /***************** Client *******************/
+    .singleClient{
+        width: 260px;
+        float: none;
+        margin:  0 auto;
+    }
+    /***************** Blog *******************/
+    .metas{
+        line-height: 1.3;
+    }
+    .metas span{
+        line-height: 11px;
+    }
+    .gridLink{
+        word-break: break-all;
+    }
+    .gridDetails h3{
+        line-height: 1.3;
+    }
+    .gridBlog.noMarginBottom{
+        margin-bottom: 30px !important;
+    }
+
+    /***************** Contact *******************/
+    .ocntactInfo{
+        margin-bottom: 30px;
+    }
+
+    /***************** Footer *******************/
+    .socialMenu{
+        text-align: center;
+    }
+    .socialMenu a{
+        margin-right: 20px;
+    }
+    .copyright{
+        text-align: center;
+        line-height: 20px;
+        padding-bottom: 60px;
+        padding-top: 0px;
+    }
+    .backTotopcenter{
+        bottom: 0;
+        height: 40px;
+        padding: 10px 0;
+        position: absolute;
+        width: 100%;
+    }
+    #backToTop{
+        width: 100%;
+        padding-top: 10px;
+        z-index: 99;
+        height: 40px;
+    }
+
+    /************** Home 2 Slider **********************/
+    .sliderItem2{
+        height: 350px;
+    }
+    .slcontents::after, .slcontents::before{
+        display: none;
+    }
+    .sH2{
+        font-size: 35px;
+    }
+    .sP2{
+        letter-spacing: 0;
+        width: 100%;
+    }
+    .myAccordion .paddingRight30{
+        padding-right: 15px !important;
+    }
+    .bars{
+        display: none;
+    }
+    .panLeft img{
+        position: relative;
+        left: auto;
+        top: auto;
+        right: auto;
+    }
+    .panLeft{
+        padding-right: 15px;
+        text-align: center;
+    }
+    .panContent.panLeft{
+        margin-bottom: 0px;
+    }
+    .myAccordion .paddingLeft30{
+        padding-left: 15px !important;
+    }
+    .panDate.dateLeft{
+        margin: 0px;
+    }
+    .panDate{
+        min-height: 0px;
+    }
+    .dateLeft .hisDate::before{
+        display: none;
+    }
+    .dateLeft .hisDate{
+        left: auto;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+    .dateRight .hisDate::before{
+        display: none;
+    }
+    .panDate.dateRight{
+        margin-bottom: 0px;
+    }
+    .dateRight .hisDate{
+        position: relative;
+        left: auto;
+        right: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .panContent.panRight{
+        padding-right: 15px;
+        margin-top: 0px;
+        text-align: center;
+        padding-left: 15px;
+    }
+    .panRight img{
+        position: relative;
+        left: auto;
+        top: auto;
+        right: auto;
+    }
+    .singFullDetails h3{
+        line-height: 20px;
+    }
+    .sFTestimonial p{
+        font-size: 15px;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+    .sFTestimonial{
+        padding: 40px 20px;
+    }
+    .sFVideo iframe{
+        height: 180px;
+    }
+    .sidebar{
+        margin-top: 30px;
+    }
+    .b1desc h1, .b1desc7 h1{
+        font-size: 30px;
+    }
+    .b1desc p, .b1desc7 p{
+        width: 100%;
+        line-height: inherit;
+    }
+    .apButtons {
+        font-size: 12px;
+        padding: 15px 20px;
+    }
+    #carousel3{
+        padding-top: 10px;
+    }
+
+}
